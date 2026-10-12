@@ -12,7 +12,7 @@ authors:
 license: CC-BY-4.0
 keywords: ArcGIS, geospatial, cartography, mapping
 abstract: |
-  The operating system you use affects you nearly every single day. Switching from Windows to Linux is not only worthwhile but, in many cases, also valuable. My experience came from continual frustrations with Windows 11 performance. I have tried five different distros so far and like two in particular: Pop!_OS and Manjaro KDE Plasma. The main Linux advantages are open-source software, much faster application start-up times, and the general feeling that computers run more efficiently on Linux. There are difficulties, such as Bluetooth connectivity, touchscreen compatibility, and the learning curve of terminal-based workflows. Recommendations include beginning with older hardware, being patient with hardware incompatibility, using the terminal more, and looking for MS Office alternatives. A summary table of Linux advantages and disadvantages is included.
+  The default settings used in ArcGIS Pro layouts seldom correspond with a cartographer's intentions, which means that each new layout or one that is being reused has to be manually checked over in terms of page setup, margins, scale bars, north arrows, legends, and grid options so that the unnecessary elements can be turned off and the ones that are needed can be adjusted. The layer credits from map services also add to the difficulty of the situation since they are automatically placed in the layout, are usually positioned well outside the visible area of the page, and are very hard to move or restyle without having to go through repeated trials and errors. This paper presents a one-click Python toolbox tool that solves both of these issues by resetting the default settings of any nonessential layout components and bringing the credits from the service layers into a convenient and consistent location through a single operation. The tool is based on a customizable .pyt template, allowing users to modify the position of the credits, the default page settings, and the elements that are disabled in order to align with their own organization's cartographic standards rather than having to begin from scratch. A step-by-step setup guide is provided so that readers can create and customize their own version in just a few minutes and thus save a great deal of time on all the layouts they make afterwards.
 kernelspec:
   name: python3
   display_name: Python 3
@@ -30,7 +30,7 @@ exports:
 :alt: Finger pointing at apps
 :::
 
-> "It's a layout, I mean what can you expect?" John Nelson
+> "It's a layout, I mean what can you expect?" Get a quote
 
 # background
 
